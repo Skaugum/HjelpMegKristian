@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.gruppe44.controllers.AdministrerKontaktpersonController"
+            prefHeight="400.0" prefWidth="600.0">
+    <TableView prefHeight="600.0" prefWidth="1034.0">
+        <columns>
+            <TableColumn prefWidth="215.73339945475345" text="Navn" />
+            <TableColumn minWidth="0.0" prefWidth="250.6665802001953" text="Telefonnummer" />
+            <TableColumn prefWidth="159.4666748046875" text="Firma" />
+            <TableColumn minWidth="0.0" prefWidth="257.86663818359375" text="E-postadresse" />
+            <TableColumn prefWidth="144.00006103515625" text="Administrer" />
+        </columns>
+    </TableView>
+</AnchorPane>

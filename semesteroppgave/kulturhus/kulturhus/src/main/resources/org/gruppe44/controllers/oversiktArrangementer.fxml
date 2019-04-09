@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="oversiktArrangementerTab" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.gruppe44.controllers.OversiktArrangementerController">
+    <children>
+        <TableView fx:id="table" prefHeight="600.0" prefWidth="1034.0">
+            <columns>
+                <TableColumn prefWidth="246.93336689472198" text="Navn" />
+                <TableColumn minWidth="0.0" prefWidth="129.86659240722656" text="Dato" />
+                <TableColumn minWidth="0.0" prefWidth="139.20001220703125" text="Type" />
+                <TableColumn prefWidth="166.66668701171875" text="Lokale" />
+                <TableColumn prefWidth="170.4000244140625" text="Ledige billetter" />
+                <TableColumn minWidth="0.0" prefWidth="177.5999511718751" text="Kjøp billett" />
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

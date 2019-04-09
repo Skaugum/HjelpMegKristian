@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1024.0"
+            xmlns="http://javafx.com/javafx/10.0.1"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="org.gruppe44.controllers.MainController">
+   <children>
+      <TabPane tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0">
+        <tabs>
+            <Tab text="Billettsalg">
+               <content>
+                  <fx:include fx:id="oversiktArrangementerTab" source="oversiktArrangementer.fxml"/>
+               </content>
+            </Tab>
+            <Tab text="Registrer lokale">
+               <content>
+                  <fx:include fx:id="registrerLokaleTab" source="registrerLokale.fxml" />
+               </content>
+            </Tab>
+            <Tab text="Registrer arrangement">
+              <content>
+                  <fx:include fx:id="registrerArrangementTab" source="registrerArrangement.fxml"/>
+              </content>
+            </Tab>
+            <Tab text="Administrer arrangement">
+               <content>
+                  <fx:include fx:id="administrerArrangementTab" source="administrerArrangement.fxml"/>
+               </content>
+            </Tab>
+            <Tab text="Administrer kontaktperson">
+               <content>
+                  <fx:include fx:id="administrerKontaktpersonTab" source="administrerKontaktperson.fxml"/>
+               </content>
+            </Tab>
+            <Tab text="Administrer lokale">
+               <content>
+                    <fx:include fx:id="administrerLokaleTab" source="administrerLokale.fxml"/>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

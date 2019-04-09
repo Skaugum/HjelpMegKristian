@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.gruppe44.controllers.RegistrerArrangementController"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+        <Text layoutX="47.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Registrer nytt arrangement">
+            <font>
+                <Font size="37.0" />
+            </font>
+        </Text>
+        <Label layoutX="54.0" layoutY="110.0" text="Navn på arrangementet:" />
+        <TextField fx:id="txtArrangementNavn" layoutX="192.0" layoutY="106.0" />
+        <Label layoutX="366.0" layoutY="110.0" text="Medvirkende:" />
+        <TextField fx:id="txtMedvirkende" layoutX="461.0" layoutY="106.0" />
+        <Label layoutX="54.0" layoutY="157.0" text="Type arrangement:" />
+        <TextField fx:id="txtArrangementType" layoutX="192.0" layoutY="153.0" promptText="Kino/Konsert/Teater osv." />
+        <Label layoutX="366.0" layoutY="157.0" text="Lokale:" />
+        <ChoiceBox fx:id="choiceLokale" layoutX="461.0" layoutY="153.0" prefWidth="150.0" />
+        <Label layoutX="54.0" layoutY="212.0" text="Kontaktperson:" />
+        <ChoiceBox fx:id="choiceKontaktperson" layoutX="192.0" layoutY="208.0" prefWidth="150.0" />
+        <Button fx:id="txtNyKontaktperson" layoutX="366.0" layoutY="208.0" mnemonicParsing="false" onAction="#registrerNyKontaktperson" text="Ny kontaktperson" />
+        <Label layoutX="54.0" layoutY="264.0" text="Dato:" />
+        <DatePicker fx:id="dateDato" layoutX="192.0" layoutY="260.0" promptText="DD/MM/YYYY" />
+        <Label layoutX="54.0" layoutY="323.0" text="Start:" />
+        <TextField fx:id="txtStart" layoutX="192.0" layoutY="319.0" promptText="TT:MM" />
+        <Label layoutX="366.0" layoutY="323.0" prefWidth="27.0" text="Slutt:" />
+        <TextField fx:id="txtSlutt" layoutX="461.0" layoutY="319.0" promptText="TT:MM" />
+        <Label layoutX="55.0" layoutY="392.0" text="Pris:" />
+        <TextField fx:id="txtPris" layoutX="192.0" layoutY="388.0" promptText="NOK" />
+        <Button fx:id="btnRegistrer" layoutX="47.0" layoutY="460.0" mnemonicParsing="false" onAction="#registrerArrangement" text="Registrer arrangement" />
+    </children>
+</AnchorPane>

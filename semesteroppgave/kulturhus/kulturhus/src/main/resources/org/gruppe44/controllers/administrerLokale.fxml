@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.gruppe44.controllers.AdministrerLokaleController"
+            prefHeight="400.0" prefWidth="600.0">
+    <TableView fx:id="tabell" prefHeight="600.0" prefWidth="1034.0">
+        <columns>
+            <TableColumn fx:id="lokaleNavn" prefWidth="380.2665873209644" text="Navn" />
+            <TableColumn fx:id="type" minWidth="0.0" prefWidth="338.1333923339844" text="Type" />
+            <TableColumn fx:id="plasser" prefWidth="124.53326416015625" text="Antall plasser" />
+            <TableColumn prefWidth="182.4000244140625" text="Administrer" />
+        </columns>
+    </TableView>
+</AnchorPane>
